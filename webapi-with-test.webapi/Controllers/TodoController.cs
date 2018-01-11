@@ -21,6 +21,7 @@ namespace webapi_with_test.webapi.Controllers
                 _context.TodoItems.Add(new TodoItem { Name = "Buy milk" });
                 _context.TodoItems.Add(new TodoItem { Name = "Wash car" });
                 _context.TodoItems.Add(new TodoItem { Name = "Drink mojito" });
+                _context.TodoItems.Add(new TodoItem { Name = "Walk dog" });
                 _context.SaveChanges();
             }
         }
