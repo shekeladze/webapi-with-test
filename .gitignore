@@ -1,0 +1,7 @@
+.vscode
+
+webapi-with-test.test/[Bb]in/
+webapi-with-test.test/[Oo]bj/
+
+webapi-with-test.webapi/[Bb]in/
+webapi-with-test.webapi/[Oo]bj/
