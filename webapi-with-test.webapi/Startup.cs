@@ -37,7 +37,10 @@ namespace webapi_with_test.webapi
                 app.UseDeveloperExceptionPage();
             }
 
+            //app.UsePathBase("/todo-service");
+            
             app.UseMvc();
+
         }
     }
 }
