@@ -17,17 +17,19 @@ namespace webapi_with_test.webapi.Controllers
             _context = context;
 
             var machine = string.Empty;
+            var osVersion = string.Empty;
 
             try
             {
                 machine = Environment.MachineName;
+                osVersion = Environment.OSVersion.VersionString;
             }
             catch{}
 
             if (_context.TodoItems.Count() == 0)
             {
-                _context.TodoItems.Add(new TodoItem { Name = "Buy milk_v2" });
-                _context.TodoItems.Add(new TodoItem { Name = "Wash car_v2" });
+                _context.TodoItems.Add(new TodoItem { Name = "Buy milk" });
+                _context.TodoItems.Add(new TodoItem { Name = "OS Version: " + osVersion });
                 _context.TodoItems.Add(new TodoItem { Name = "Machne: " + machine });
                 _context.SaveChanges();
             }
