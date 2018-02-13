@@ -28,7 +28,7 @@ namespace webapi_with_test.webapi.Controllers
 
             if (_context.TodoItems.Count() == 0)
             {
-                _context.TodoItems.Add(new TodoItem { Name = "Buy milk" });
+                _context.TodoItems.Add(new TodoItem { Name = "Buy milk_v3" });
                 _context.TodoItems.Add(new TodoItem { Name = "OS Version: " + osVersion });
                 _context.TodoItems.Add(new TodoItem { Name = "Machne: " + machine });
                 _context.SaveChanges();
